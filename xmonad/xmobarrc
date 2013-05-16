@@ -1,0 +1,27 @@
+Config { font = "-*-terminus-*-*-*-*-16-*-*-*-*-*-iso8859-*"
+--"xft:terminus:size=11"
+       , bgColor  = "#25292c"
+       , fgColor  = "#777777"
+       , commands = [ 
+       Run StdinReader, 
+       Run Com "cat" ["~/.xmonad/conkystats"] "conky" 10,
+       Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10,
+       Run Com "uname" ["-s","-r"] "" 36000,
+--       Run Com "acpi" ["-s","-r"] "" 36000,
+
+	  Run BatteryP ["BAT0"]
+       	       ["-t", "<acstatus><watts> (<left>%)",
+               "-L", "10", "-H", "80", "-p", "3",
+               "--", "-O", "<fc=green>On</fc> - ", "-o", "",
+               "-L", "-15", "-H", "-5",
+               "-l", "red", "-m", "blue", "-h", "green"]
+              60,
+
+       Run Memory ["-t","Mem: <usedratio>%"] 10,
+--       Run Swap [] 10,
+       Run Date "%a %b %_d %l:%M" "date" 10,
+       Run Network "wlan0" [] 10
+        ]
+
+       , template = " %StdinReader% } <fc=#82a3bf>(</fc> <fc=#4d5d9d>%uname%</fc> <fc=#e5786d>::</fc> %wlan0% <fc=#d09562>||</fc> %cpu% <fc=#d09562>||</fc> %memory% <fc=#d09562>||</fc> %battery% <fc=#82a3bf>)</fc>{ <fc=#ee9a00>%date%</fc>  "
+       }

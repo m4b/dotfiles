@@ -1,0 +1,10 @@
+# ~/.conky_bl
+# Set to yes if you want Conky to be forked in the background
+background no
+out_to_x no
+out_to_console yes
+# Update interval in seconds
+update_interval 1
+ 
+TEXT
+ :: ^fg(\#1793d1)^i(/root/icons/dzen/arch_10x10.xbm) ^fg(\#FFFFFF)$kernel $machine^fg(\#ebac54) ^i(/root/icons/dzen/pacman.xbm) ^fg(\#FFFFFF)up-to-date
