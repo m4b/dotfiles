@@ -20,11 +20,15 @@ synclient TouchpadOff=2
 
 xrdb -merge "${HOME}/.Xresources"
 xsetroot -cursor_name left_ptr
-#eval $(cat ~/.fehbg)
 
-$HOME/scripts/set-background.sh &
-$HOME/scripts/battery-monitor.sh &
-emacs &
-#setxkbmap -layout us,ru -variant intl-unicode-logician,ruu -option grp:rctrl_toggle,ctrl:swapcaps,ctrl:ralt_rctrl
-setxkbmap -layout us,ru -variant apl,ruu -option grp:rctrl_toggle,ctrl:swapcaps,ctrl:ralt_rctrl
-exec xmonad
+#$HOME/scripts/set-background.sh &
+#$HOME/scripts/battery-monitor.sh &
+#emacs &
+setxkbmap -layout us,ru -variant intl-unicode-logician,ruu -option grp:rctrl_toggle,ctrl:swapcaps,ctrl:ralt_rctrl
+#setxkbmap -layout us,ru -variant apl,ruu -option grp:rctrl_toggle,ctrl:swapcaps,ctrl:ralt_rctrl
+
+#gsettings set org.gnome.desktop.input-sources xkb-options "['grp:rshift_toggle', 'ctrl:swapcaps', 'ctrl:ralt_rctrl', 'lv3:switch']"
+#gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us+intl-unicode-logician'), ('xkb', 'ru+ruu')]"
+
+#exec xmonad
+exec gnome-session

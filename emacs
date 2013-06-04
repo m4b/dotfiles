@@ -13,33 +13,33 @@
 
 ;; SHOULD PUT IN CONDITIONAL, -nw gives errors
 
-(set-face-font 'default "fontset-startup")
+;(set-face-font 'default "fontset-startup")
 
 ; mathematical operators
-(set-fontset-font "fontset-startup"
-   (cons (decode-char 'ucs #x2200)
-         (decode-char 'ucs #x22ff))
-    "-unknown-Asana Math-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1")
+;(set-fontset-font "fontset-startup"
+;   (cons (decode-char 'ucs #x2200)
+;         (decode-char 'ucs #x22ff))
+;    "-unknown-Asana Math-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1")
 
 ;; misc math a
-(set-fontset-font "fontset-startup"
-   (cons (decode-char 'ucs #x27c0)
-         (decode-char 'ucs #x27ef))
-    "-unknown-Asana Math-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1")
+;(set-fontset-font "fontset-startup"
+;   (cons (decode-char 'ucs #x27c0)
+;         (decode-char 'ucs #x27ef))
+;    "-unknown-Asana Math-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1")
 
 
 ;; misc math b
-(set-fontset-font "fontset-startup"
-   (cons (decode-char 'ucs #x2980)
-         (decode-char 'ucs #x29ff))
-    "-unknown-Asana Math-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1")
+;(set-fontset-font "fontset-startup"
+;   (cons (decode-char 'ucs #x2980)
+;         (decode-char 'ucs #x29ff))
+;    "-unknown-Asana Math-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1")
 
 
 ;; supplemental mathematical operators
-(set-fontset-font "fontset-startup"
-   (cons (decode-char 'ucs #x2A00)
-         (decode-char 'ucs #x2Aff))
-    "-unknown-Asana Math-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1")
+;(set-fontset-font "fontset-startup"
+;   (cons (decode-char 'ucs #x2A00)
+;         (decode-char 'ucs #x2Aff))
+;    "-unknown-Asana Math-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1")
 
 
 ;; (set-face-font 'default "-xos4-Terminus-normal-normal-normal-*-16-*-*-*-c-80-iso10646-1")
@@ -105,8 +105,8 @@ font-lock-maximum-decoration t
 (add-to-list 'interpreter-mode-alist '("ocamlrun" . caml-mode))
 (add-to-list 'interpreter-mode-alist '("ocaml" . caml-mode))
 
-(if window-system (require 'caml-font))
-(require 'caml-font)
+;(if window-system (require 'caml-font))
+;(require 'caml-font)
 
 
 (add-hook 'tuareg-mode-hook '(lambda ()
@@ -122,14 +122,14 @@ font-lock-maximum-decoration t
 
 ;; HASKELL
 
-(load "haskell-site-file")
-(setq haskell-indentation-mode t)
+;(load "haskell-site-file")
+;(setq haskell-indentation-mode t)
 
 ;; SuperCollider
 
-(add-to-list 'load-path "/usr/local/bin/sclang")
-(require 'sclang)
+;(add-to-list 'load-path "/usr/local/bin/sclang")
+;(require 'sclang)
 
 ;; Scheme/Racket
 
-(setq scheme-program-name "/usr/bin/racket")
+;(setq scheme-program-name "/usr/bin/racket")

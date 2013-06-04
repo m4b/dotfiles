@@ -64,3 +64,4 @@ myfortune=$(fortune)
 #echo $myfortune >> $HOME/misc/fortunes.txt
 echo $myfortune
 
+export PVS_LIBRARY_PATH="$HOME/bin/pvs/nasalib"

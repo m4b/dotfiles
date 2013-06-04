@@ -1395,10 +1395,6 @@ xkb_symbols "intl-unicode-logician" {
  name[Group1]= "The Logicians unicode-keyboard, for world domination";
 
  include "us(intl-unicode)"
- // right alt is control
- include "ctrl(ralt_rctrl)"
- // compose with menu
- include "level3(menu_switch)"
 
 // ⇒ U21D2 \Rightarrow
 // → U2192 \rightarrow
@@ -1420,7 +1416,8 @@ xkb_symbols "intl-unicode-logician" {
 // ≡ U2261 \equiv
    
     key <AE10> { [	 0, parenright, U22A5 ] };	
-    key <AE01> { [	 1, exclam, U22A4 ] };	
+    key <AE01> { [	 1, exclam, U22A4, Greek_beta ] };	
+
     key <AE07> { [         7,   ampersand, U2227        ] };	
 
     // equivalence ≡, and shift exists ∃
@@ -1436,10 +1433,10 @@ xkb_symbols "intl-unicode-logician" {
     key <AD12> { [bracketright, braceright, guillemotright, rightdoublequotemark ] };
 
     //disjunction ∨, forall ∀
-    key <AC01> { [	   a,          A,        U2228,           U2200 ] };
+    key <AC01> { [	   a,          A,        Greek_alpha,           U2200 ] };
 
     key <AC02> { [	   s,          S,        ssharp,          section ] };
-    key <AC03> { [	   d,          D,           eth,              ETH ] };
+    key <AC03> { [	   d,          D,           U2228,              Greek_delta ] };
     key <AC04> { [	   f,          F,             f,                F ] };
     key <AC05> { [	   g,          G,             Greek_gamma,        Greek_GAMMA ] };
     key <AC06> { [	   h,          H,             h,                H ] };
@@ -1496,10 +1493,7 @@ xkb_symbols "apl" {
 
  name[Group1]= "The APL programmers keyboard, for symbolic world domination";
 
-// include "us(intl-unicode)"
  include "us(basic)"
-// include "ctrl(ralt_rctrl)"
- include "level3(menu_switch)" 
     // ⋄ ⌺
     key <TLDE> { [	grave,		asciitilde,	U22C4,		U233A   	] };
     // ¨ ⌶
