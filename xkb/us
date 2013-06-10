@@ -1386,7 +1386,7 @@ xkb_symbols "crd" {
 };
 
 // Apocryphally, Willard Van Orman Quine once famously replaced the keys on his typewriter with keys more appropriate to his trade.  W.V.O also set back the study of modal logic for about 50 years; nevertheless, our story is meant to illustrate that even mediocre logicians need their symbols at the tip of the their fingers.
-// This is a us variant kbd for SYMBOLIC logicians, with unicode, for those times when _deduction_ isn't just an option, but a necessity.  Naturally, this will impress friends, colleagues, enemies, and other person with whom you have unspecified relationships.
+// This is a us variant kbd for SYMBOLIC logicians, with unicode, for those times when _deduction_ isn't just an option, but a necessity.  Naturally, this will impress friends, colleagues, enemies, and other persons with whom you have unspecified relationships.
 // by m4b
 
 partial alphanumeric_keys
@@ -1415,24 +1415,43 @@ xkb_symbols "intl-unicode-logician" {
 // U25A1 \box
 // ≡ U2261 \equiv
    
-    key <AE10> { [	 0, parenright, U22A5 ] };	
     key <AE01> { [	 1, exclam, U22A4, Greek_beta ] };	
-
-    key <AE07> { [         7,   ampersand, U2227        ] };	
+    // ‾ ⍫
+    key <AE02> { [	2,		at,     	U221E   	] };
+    // < ⍒
+    key <AE03> { [	3,		numbersign,	less,		U2352		] };
+    // ≤ ⍋
+    key <AE04> { [	4,		dollar,	        lessthanequal,	U234B   	] };
+    // = ⌽
+    key <AE05> { [	5,		percent,	equal,		U233D		] };
+    // ≥ ⍉
+    key <AE06> { [	6,		asciicircumflex,greaterthanequal,U2349		] };
+    // > ⊖
+    key <AE07> { [	7,		ampersand,	greater,	U2296		] };
+    // ≠ ⍟
+    key <AE08> { [	8,		asterisk,	notequal,       U235F    	] };
+    // ∨ ⍱
+    key <AE09> { [	9,		parenleft,	U2228,		U2371		] };
+    // ∧ ⍲
+    key <AE10> { [	0,		parenright,	U2227,	  	U22A5   	] };
+    // × ¬
+    key <AE11> { [	minus,		underscore,	 U00D7,		U2212		] };
+    // ÷ ⌹
+    key <AE12> { [	equal,		plus,		U00F7,	 	U2339 		] };
 
     // equivalence ≡, and shift exists ∃
     key <AD03> { [	   e,          E,        U2261,             U2203 ] };
     key <AD04> { [	   r,          R,    registered,       registered ] };
-    key <AD05> { [	   t,          T,         thorn,            THORN ] };
+    key <AD05> { [	   t,          T,         Greek_PI,            THORN ] };
     key <AD06> { [	   y,          Y,    udiaeresis,       Udiaeresis ] };
     key <AD07> { [	   u,          U,        uacute,           Uacute ] };
     key <AD08> { [	   i,          I,        U2192,             U21D2 ] };
     key <AD09> { [	   o,          O,        oacute,           Oacute ] };
-    key <AD10> { [	   p,          P,    odiaeresis,            U22C4 ] };
+    key <AD10> { [	   p,          P,    Greek_pi,            U22C4 ] }; // 
     key <AD11> { [ bracketleft,  braceleft,  guillemotleft, leftdoublequotemark ] };
     key <AD12> { [bracketright, braceright, guillemotright, rightdoublequotemark ] };
 
-    //disjunction ∨, forall ∀
+    //α, forall ∀
     key <AC01> { [	   a,          A,        Greek_alpha,           U2200 ] };
 
     key <AC02> { [	   s,          S,        ssharp,          section ] };
@@ -1445,17 +1464,17 @@ xkb_symbols "intl-unicode-logician" {
     key <AC08> { [	   k,          K,            U2227,               OE ] };
     key <AC09> { [	   l,          L,        U03BB,         Ooblique ] };
     key <AC10> { [ semicolon,      colon,     paragraph,           degree ] };
-
     key <AB01> { [	   z,          Z,            ae,               AE ] };
-    //xor
+    // xor
     key <AB02> { [	   x,          X,             U2295,                X ] };
     key <AB03> { [	   c,          C,     copyright,             cent ] };
-    //proves ⊢
+    // proves ⊢
     key <AB04> { [	   v,          V,             U22A2,                V ] };
     //biconditional, bold biconditional ⇔
     key <AB05> { [	   b,          B,             U2194,                U21D4 ] };
     // negation ¬,  
     key <AB06> { [	   n,          N,        U00AC,                U25FB ] };
+    // models ⊨
     key <AB07> { [	   m,          M,            U22A8,               mu ] };
 //    key <AB08> { [     comma,       less,      ccedilla,         Ccedilla ] };
 //    key <AB09> { [    period,    greater, dead_abovedot,       dead_caron ] };

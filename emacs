@@ -92,33 +92,10 @@ font-lock-maximum-decoration t
 
 ;; ****** TUAREG-MODE ****** merci INRIA pour OCaml******
 
-(setq auto-mode-alist (cons '("\\.ml\\w?" . tuareg-mode) auto-mode-alist))
-(autoload 'tuareg-mode "tuareg" "Major mode for editing Caml code" t)
-(autoload 'camldebug "camldebug" "Run the Caml debugger" t)
+  (setq auto-mode-alist (cons '("\\.ml[iylp]?\\'" . tuareg-mode) auto-mode-alist))
+  (autoload 'tuareg-mode "tuareg" "Major mode for editing Caml code" t)
+  (autoload 'ocamldebug "ocamldebug" "Run the Caml debugger" t)
 
-(add-to-list 'load-path "/usr/share/emacs/site-lisp/caml-mode")
-
-(add-to-list 'auto-mode-alist '("\\.ml[iylp]?$" . caml-mode))
-(autoload 'caml-mode "caml" "Major mode for editing OCaml code." t)
-(autoload 'run-caml "inf-caml" "Run an inferior OCaml process." t)
-(autoload 'camldebug "camldebug" "Run ocamldebug on program." t)
-(add-to-list 'interpreter-mode-alist '("ocamlrun" . caml-mode))
-(add-to-list 'interpreter-mode-alist '("ocaml" . caml-mode))
-
-;(if window-system (require 'caml-font))
-;(require 'caml-font)
-
-
-(add-hook 'tuareg-mode-hook '(lambda ()
-	(global-set-key [f9] 'caml-types-show-type)
- 	(global-set-key [f10] 'tuareg-eval-phrase)
-	(global-set-key [f11] 'mark-whole-buffer)
-	(global-set-key [f12] 'tuareg-eval-region)
-        (if (featurep 'sym-lock)  
-        	(setq sym-lock-mouse-face-enabled nil))
-                ;; turn off annoying special face under mouse
-
-))
 
 ;; HASKELL
 
