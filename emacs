@@ -13,6 +13,8 @@
 
 ;; SHOULD PUT IN CONDITIONAL, -nw gives errors
 
+(set-face-font 'default "-unknown-DejaVu Sans Mono-normal-normal-normal-*-*-*-*-*-m-0-iso10646-1")
+
 ;(set-face-font 'default "fontset-startup")
 
 ; mathematical operators
@@ -42,7 +44,7 @@
 ;    "-unknown-Asana Math-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1")
 
 
-;; (set-face-font 'default "-xos4-Terminus-normal-normal-normal-*-16-*-*-*-c-80-iso10646-1")
+;(set-face-font 'default "-xos4-Terminus-normal-normal-normal-*-16-*-*-*-c-80-iso10646-1")
 
 ;;(set-face-font 'default "-xos4-terminus-medium-r-normal--20-*-72-72-c-100-iso10646-1")
 
@@ -99,8 +101,8 @@ font-lock-maximum-decoration t
 
 ;; HASKELL
 
-;(load "haskell-site-file")
-;(setq haskell-indentation-mode t)
+(load "haskell-site-file")
+(setq haskell-indentation-mode t)
 
 ;; SuperCollider
 
