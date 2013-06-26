@@ -112,3 +112,8 @@ font-lock-maximum-decoration t
 ;; Scheme/Racket
 
 ;(setq scheme-program-name "/usr/bin/racket")
+
+;; LUA
+
+(setq auto-mode-alist (cons '("\.lua$" . lua-mode) auto-mode-alist))
+(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
