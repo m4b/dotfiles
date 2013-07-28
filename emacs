@@ -1,16 +1,4 @@
-;; ****** FOR CLONE ******
-
-;; tells emacs where my personal elisp lib dir is
-;; this is the dir you place all your extra packages
-;; must create directory first then put .el file in
-;;(add-to-list 'load-path "~/.emacs.d/")
-
-;; load the packaged named xyz.
-
-;; to load a .el file when editing, type: M-x eval-buffer
-
 ;; ****** GLOBAL PREFERENCES ******
-
 ;; SHOULD PUT IN CONDITIONAL, -nw gives errors
 
 (set-face-font 'default "-unknown-DejaVu Sans Mono-normal-normal-normal-*-*-*-*-*-m-0-iso10646-1")
@@ -101,8 +89,15 @@ font-lock-maximum-decoration t
 
 ;; HASKELL
 
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/haskell-mode")
+(autoload 'haskell-mode "haskell" "Major mode for editing Haskell code" t)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+
+
 (load "haskell-site-file")
-(setq haskell-indentation-mode t)
+;(setq auto-mode-alist (cons '("\\.[l]?hs\\'" . haskell-mode) auto-mode-alist))
+
+;(setq haskell-indentation-mode t)
 
 ;; SuperCollider
 

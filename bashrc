@@ -12,7 +12,7 @@ alias emacs='emacs --no-splash --fullscreen'
 EDITOR=emacs
 export EDITOR
 
-export PATH="$PATH:$HOME/bin/:$HOME/.cabal/bin"
+export PATH="$PATH:$HOME/bin/:$HOME/.cabal/bin:/opt/android-sdk/tools"
 
 # LESS man page colors -------------------------------------------------
 
