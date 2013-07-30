@@ -89,15 +89,8 @@ font-lock-maximum-decoration t
 
 ;; HASKELL
 
-(add-to-list 'load-path "/usr/share/emacs/site-lisp/haskell-mode")
-(autoload 'haskell-mode "haskell" "Major mode for editing Haskell code" t)
+(load "haskell-mode-autoloads")
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
-
-
-(load "haskell-site-file")
-;(setq auto-mode-alist (cons '("\\.[l]?hs\\'" . haskell-mode) auto-mode-alist))
-
-;(setq haskell-indentation-mode t)
 
 ;; SuperCollider
 
