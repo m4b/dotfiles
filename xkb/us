@@ -1571,6 +1571,7 @@ xkb_symbols "intl-unicode-logician" {
 // U25A1 \box
 // ≡ U2261 \equiv
 
+// FIX: Change from former APL to intl-unicode-logician
 // template for beautiful unicode keyboard stolen from xkb ru symbol file
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
 // │ ~ ⌺ │ ! ⌶ │ @ ⍫ │ # ⍒ │ $ ⍋ │ % ⌽ │ ^ ⍉ │ & ⊖ │ * ⍟ │ ( ⍱ │ ) ⍲ │ _ ¬ │ + ⌹ ┃ ⌫       ┃

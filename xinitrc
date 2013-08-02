@@ -24,9 +24,8 @@ xsetroot -cursor_name left_ptr
 #$HOME/scripts/set-background.sh &
 #$HOME/scripts/battery-monitor.sh &
 #emacs &
-setxkbmap -layout us,ru -variant intl-unicode-logician,ruu -option grp:rctrl_toggle,ctrl:swapcaps,ctrl:ralt_rctrl
-#setxkbmap -layout us,ru -variant apl,ruu -option grp:rctrl_toggle,ctrl:swapcaps,ctrl:ralt_rctrl
-
+#setxkbmap -layout us,ru -variant intl-unicode-logician,ruu -option grp:rshift_toggle,ctrl:swapcaps,ctrl:ralt_rctrl,lv3:shift, lv3:lctl_switch
+setxkbmap -layout us,ru -variant intl-unicode-logician,ruu -option grp:rshift_toggle,ctrl:ralt_rctrl,lv3:shift
 #gsettings set org.gnome.desktop.input-sources xkb-options "['grp:rshift_toggle', 'ctrl:swapcaps', 'ctrl:ralt_rctrl', 'lv3:switch']"
 #gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us+intl-unicode-logician'), ('xkb', 'ru+ruu')]"
 
