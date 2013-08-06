@@ -1,74 +1,64 @@
 partial alphanumeric_keys
-xkb_symbols "em" {
+xkb_symbols "eml" {
 
  name[Group1]= "Experimental eml keyboard";
 
-  include "us(intl-unicode)"
-//  include "level3(ralt_switch)"
-//  include "compose(rctrl)"
-//  include "level3(enter_switch)"
-//  include "level3(caps_switch)"
+    // operators up here
+    key <TLDE> { [      UE22D, UE22E ] };
+    key <AE01> { [	UE22A, 1, exclam ] };	
+    key <AE02> { [	UE22B, 2, at ] };
+    key <AE03> { [	UE22C, 3, numbersign ] };
+    key <AE04> { [	UE22F, UE230, 4, dollar ] };
+    key <AE05> { [	UE231, UE232, 5, percent ] };
+    key <AE06> { [	UE233, UE234, 6, asciicircumflex ] };
+    key <AE07> { [	UE235, UE236, 7, ampersand ] };
+    key <AE08> { [	UE237, UE238, 8, asterisk ] };
+    key <AE09> { [	UE227, 9, parenleft ] };
+    key <AE10> { [	UE228, 0, parenright ] };
+    key <AE11> { [	UE222, U2212 ] };
+    key <AE12> { [	equal,	plus, U00F7, U2339 ] };
 
- 
-    key <AE01> { [	1,		exclam,		U22A4,		Greek_beta ] };	
-    // ‾ ⍫
-    key <AE02> { [	2,		at,     	U221E   	] };
-    // < ⍒
-    key <AE03> { [	3,		numbersign,	less,		U2352		] };
-    // ≤ ⍋
-    key <AE04> { [	4,		dollar,	        lessthanequal,	U234B   	] };
-    // = ⌽
-    key <AE05> { [	5,		percent,	equal,		U2245		] };
-    // ≥ ⍉
-    key <AE06> { [	6,		asciicircumflex,greaterthanequal,U2349		] };
-    // > ⊖
-    key <AE07> { [	7,		ampersand,	greater,	U2296		] };
-    // ≠ ⍟
-    key <AE08> { [	8,		asterisk,	notequal,       U235F    	] };
-    // ∨ ⍱
-    key <AE09> { [	9,		parenleft,	UE227,		UE227		] };
-    // ∧ ⍲
-    key <AE10> { [	0,		parenright,	UE228,	  	UE228   	] };
-    // × ¬
-    key <AE11> { [	minus,		underscore,	UE222,		U2212		] };
-    // ÷ ⌹
-    key <AE12> { [	equal,		plus,		U00F7,	 	U2339 		] };
+    key <AC01> { [	   UE200,            UE21F ] }; //a
+    key <AB05> { [	   UE201,            UE220 ] };
+    key <AB03> { [	   UE202,            UE221 ] };
+    key <AC03> { [	   UE203,      Greek_delta ] };
+    key <AD03> { [	   UE204,            U2203 ] };
+    key <AC04> { [	   UE205,                F ] };
+    key <AC05> { [	   UE206,      Greek_GAMMA ] };
+    key <AC06> { [	   UE207,                H ] };
+    key <AD08> { [	   UE208,            UE21E ] };
+    key <AC07> { [	   UE209,                J ] };
+    key <AC08> { [	   UE20A,               OE ] };
+    key <AC09> { [	   UE20B,         Ooblique ] };
+    key <AB07> { [	   UE20C,               mu ] };
+    key <AB06> { [	   UE20D,            U25FB ] };
+    key <AD09> { [	   UE20E,           Oacute ] };
+    key <AD10> { [	   UE20F,            UE21D ] };  //p
+    key <AD01> { [	   UE210,            U2203 ] };
+    key <AD04> { [	   UE211,       registered ] };
+    key <AC02> { [	   UE212,            UE21A ] };
+    // change number so UE21A, B, etc., for above
+    key <AD05> { [	   UE213,            UE21C ] };
+    key <AD07> { [	   UE214,           Uacute ] };
+    key <AB04> { [	   UE215,                V ] };
+    key <AD02> { [	   UE216,            U2203 ] };
+    key <AB02> { [	   UE217,                X ] };
+    key <AD06> { [	   UE218,       Udiaeresis ] };
+    key <AB01> { [	   UE219,             UE21B ] }; //z
 
-    key <AD11> { [ bracketleft,  braceleft,  guillemotleft, leftdoublequotemark ] };
-    key <AD12> { [bracketright, braceright, guillemotright, rightdoublequotemark ] };
-
-    //α, forall ∀
-    key <AC01> { [	   a,          A,        UE200,           UE21F ] };
-    key <AB05> { [	   b,          B,        UE201,           UE220 ] };
-    key <AB03> { [	   c,          C,     	 UE202,           UE221 ] };
-    key <AC03> { [	   d,          D,        UE203,     Greek_delta ] };
-    key <AD03> { [	   e,          E,        UE204,           U2203 ] };
-    key <AC04> { [	   f,          F,        UE205,               F ] };
-    key <AC05> { [	   g,          G,        UE206,        Greek_GAMMA ] };
-    key <AC06> { [	   h,          H,        UE207,                H ] };
-    key <AD08> { [	   i,          I,        UE208,            UE21E ] };
-    key <AC07> { [	   j,          J,        UE209,                J ] };
-    key <AC08> { [	   k,          K,        UE20A,               OE ] };
-    key <AC09> { [	   l,          L,        UE20B,         Ooblique ] };
-    key <AB07> { [	   m,          M,        UE20C,               mu ] };
-    key <AB06> { [	   n,          N,        UE20D,            U25FB ] };
-    key <AD09> { [	   o,          O,        UE20E,           Oacute ] };
-    key <AD10> { [	   p,          P,        UE20F,            UE21C ] }; // 
-    key <AD01> { [	   q,          Q,        UE210,            U2203 ] };
-    key <AD04> { [	   r,          R,        UE211,       registered ] };
-    key <AC02> { [	   s,          S,        UE212,            UE21A ] };
-// change number so UE21A, B, etc., for above
-    key <AD05> { [	   t,          T,        UE213,            UE21C ] };
-    key <AD07> { [	   u,          U,        UE214,           Uacute ] };
-    key <AB04> { [	   v,          V,        UE215,                V ] };
-    key <AD02> { [	   w,          W,        UE216,            U2203 ] };
-    key <AB02> { [	   x,          X,        UE217,                X ] };
-    key <AD06> { [	   y,          Y,        UE218,       Udiaeresis ] };
-    key <AB01> { [	   z,          Z,        UE219,             UE21B ] };
-
-    key <AC10> { [ semicolon,      colon,        UE225,             UE224 ] };
-    key <AB08> { [     comma,       less,      ccedilla,         Ccedilla ] };
-    key <AB09> { [    period,    greater,        UE223                    ] };
-    key <AB10> { [     slash,   question,        UE226                    ] };
-    key <BKSL> { [ backslash,        bar,       notsign,            UE229 ] };
+    // punctuation keys, need the dash and parens?
+    key <AC10> { [ UE225, UE224 ] };
+    key <AC11> { [ UE207, quotedbl ] };
+    key <AB08> { [ comma, less,      ccedilla,         Ccedilla ] };
+    key <AB09> { [ UE223                   ] };
+    // make an appropriate / character for emmian / ?
+    key <AB10> { [ UE226                   ] };
+    // make this the escape character or not for em
+    key <BKSL> { [ notsign,          UE229 ] };
+    // brackets
+    key <AD11> { [ UE239, braceleft, guillemotleft, leftdoublequotemark ] };
+    key <AD12> { [ UE23A, braceright, guillemotright, rightdoublequotemark ] };
 };
+
+
+
