@@ -7,6 +7,7 @@ alias l='ls -al --color=auto'
 alias grep="grep --color=auto"              # colourized grep
 alias egrep="egrep --color=auto"            # colourized egrep
 alias emacs='emacs --no-splash --fullscreen'
+alias budget='libreoffice /home/m4b/personal/budget2014.ods'
 
 
 EDITOR=emacs
@@ -47,7 +48,7 @@ if [ "$TERM" = "linux" ]; then
 fi
 
 
-PS1="\[\e[0;31m\]\u\[\e[m\]\[\033[34m\] :: \[\e[m\]\[\e[1;34m\] [ \[\033[00m\]\w\[\e[1;34m\] ]\[\e[m\]\[\033[00m\] "
+PS1="\[\e[0;31m\]\u\[\e[m\]\[\033[34m\]@\[\e[0;32m\]\h\[\033[34m\] :: \[\e[m\]\[\e[1;34m\] [ \[\033[00m\]\w\[\e[1;34m\] ]\[\e[m\]\[\033[00m\] "
 PS2="\[\033[32m\]_\[\033[32m\]\[\033[34m\] ->\[\033[34m\]\[\033[00m\] "
 
 
@@ -65,3 +66,4 @@ myfortune=$(fortune)
 echo $myfortune
 
 export PVS_LIBRARY_PATH="$HOME/bin/pvs/nasalib"
+#export CLASSPATH="$CLASSPATH:/home/m4b/lib/jar/*"

@@ -1,6 +1,15 @@
 ;; ****** GLOBAL PREFERENCES ******
-;; SHOULD PUT IN CONDITIONAL, -nw gives errors
+;; Emacs Package Manager
+;; update with:
+;; package-refresh-contents
+;; install packages:
+;; package-install <RET>
+;; <package-name>
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")))
 
+;; SHOULD PUT IN CONDITIONAL, -nw gives errors
 (set-face-font 'default "-unknown-DejaVu Sans Mono-normal-normal-normal-*-*-*-*-*-m-0-iso10646-1")
 
 ;(set-face-font 'default "fontset-startup")
@@ -89,13 +98,13 @@ font-lock-maximum-decoration t
 
 ;; HASKELL
 
-(load "haskell-mode-autoloads")
+;;(load "haskell-mode-autoloads")
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
 ;; SuperCollider
 
-;(add-to-list 'load-path "/usr/local/bin/sclang")
-;(require 'sclang)
+(add-to-list 'load-path "/usr/local/bin/sclang")
+(require 'sclang)
 
 ;; Scheme/Racket
 
@@ -103,5 +112,43 @@ font-lock-maximum-decoration t
 
 ;; LUA
 
-(setq auto-mode-alist (cons '("\.lua$" . lua-mode) auto-mode-alist))
-(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+;;(setq auto-mode-alist (cons '("\.lua$" . lua-mode) auto-mode-alist))
+;;(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+
+;; hacky because package manager not working...
+;;(add-to-list 'load-path "/home/m4b/git/scala-mode2/")
+;;(require 'scala-mode2)
+
+
+
+;(defvar scala-mode-map
+;  (let ((map (make-sparse-keymap)))
+;;    (define-key map [?\C-x ?\C-d] 'inferior-haskell-send-decl)
+;;    (define-key map [?\C-c ?\C-z] 'switch-to-haskell)
+;;    (define-key map [?\C-c ?\C-l] 'inferior-haskell-load-file)
+;;    map)
+;;  "Keymap used in Scala mode.")
+
+;; ESS - Emacs Speaks Statistics
+(setq load-path (cons "/usr/share/emacs/site-lisp/ess" load-path))
+(require 'ess-site)
+
+;; android
+(require 'android-mode)
+(setq android-mode-sdk-dir "/opt/android-sdk/")
+(setq android-mode-avd "foo")
+
+;; TEST EMEL
+(add-to-list 'load-path "/home/m4b/emacs/emel/emel-mode/")
+;;(setq emel-program-name "/home/m4b/emacs/emel/emel-mode/emli	")
+(require 'emel-mode)
+
+;; elm
+(add-to-list 'load-path "/home/m4b/git/elm-mode")
+(require 'elm-mode)
+
+;; auto fill out lisp docs
+(auto-insert-mode t)
+
+;; ats mode
+(require 'ats-mode)

@@ -29,5 +29,6 @@ setxkbmap -layout us,ru,eml -variant intl-unicode-logician, , -option grp:rshift
 #gsettings set org.gnome.desktop.input-sources xkb-options "['grp:rshift_toggle', 'ctrl:swapcaps', 'ctrl:ralt_rctrl', 'lv3:switch']"
 #gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us+intl-unicode-logician'), ('xkb', 'ru+ruu')]"
 
-#exec xmonad
-exec gnome-session
+exec xmonad
+#systemctl start gdm
+#exec gnome-session

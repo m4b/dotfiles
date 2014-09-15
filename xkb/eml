@@ -16,35 +16,35 @@ xkb_symbols "eml" {
     key <AE09> { [	UE227, 9, parenleft ] };
     key <AE10> { [	UE228, 0, parenright ] };
     key <AE11> { [	UE222, U2212 ] };
-    key <AE12> { [	equal,	plus, U00F7, U2339 ] };
+    key <AE12> { [	equal, plus, U00F7, U2339 ] };
 
-    key <AC01> { [	   UE200,            UE21F ] }; //a
-    key <AB05> { [	   UE201,            UE220 ] };
-    key <AB03> { [	   UE202,            UE221 ] };
-    key <AC03> { [	   UE203,      Greek_delta ] };
-    key <AD03> { [	   UE204,            U2203 ] };
-    key <AC04> { [	   UE205,                F ] };
-    key <AC05> { [	   UE206,      Greek_GAMMA ] };
-    key <AC06> { [	   UE207,                H ] };
-    key <AD08> { [	   UE208,            UE21E ] };
-    key <AC07> { [	   UE209,                J ] };
-    key <AC08> { [	   UE20A,               OE ] };
-    key <AC09> { [	   UE20B,         Ooblique ] };
-    key <AB07> { [	   UE20C,               mu ] };
-    key <AB06> { [	   UE20D,            U25FB ] };
-    key <AD09> { [	   UE20E,           Oacute ] };
-    key <AD10> { [	   UE20F,            UE21D ] };  //p
-    key <AD01> { [	   UE210,            U2203 ] };
-    key <AD04> { [	   UE211,       registered ] };
-    key <AC02> { [	   UE212,            UE21A ] };
+    key <AC01> { [	UE200,            UE21F ] }; //a
+    key <AB05> { [	UE201,            UE220 ] };
+    key <AB03> { [	UE202,            UE221 ] };
+    key <AC03> { [	UE203,      Greek_delta ] };
+    key <AD03> { [	UE204,            U2203 ] };
+    key <AC04> { [	UE205,                F ] };
+    key <AC05> { [	UE206,      Greek_GAMMA ] };
+    key <AC06> { [	UE207,                H ] };
+    key <AD08> { [	UE208,            UE21E ] };
+    key <AC07> { [	UE209,                J ] };
+    key <AC08> { [	UE20A,               OE ] };
+    key <AC09> { [	UE20B,         Ooblique ] };
+    key <AB07> { [	UE20C,               mu ] };
+    key <AB06> { [	UE20D,            U25FB ] };
+    key <AD09> { [	UE20E,           Oacute ] };
+    key <AD10> { [	UE20F,            UE21D ] };  //p
+    key <AD01> { [	UE210,            U2203 ] };
+    key <AD04> { [	UE211,       registered ] };
+    key <AC02> { [	UE212,            UE21A ] };
     // change number so UE21A, B, etc., for above
-    key <AD05> { [	   UE213,            UE21C ] };
-    key <AD07> { [	   UE214,           Uacute ] };
-    key <AB04> { [	   UE215,                V ] };
-    key <AD02> { [	   UE216,            U2203 ] };
-    key <AB02> { [	   UE217,                X ] };
-    key <AD06> { [	   UE218,       Udiaeresis ] };
-    key <AB01> { [	   UE219,             UE21B ] }; //z
+    key <AD05> { [	UE213,            UE21C ] };
+    key <AD07> { [	UE214,           Uacute ] };
+    key <AB04> { [	UE215,                V ] };
+    key <AD02> { [	UE216,            U2203 ] };
+    key <AB02> { [	UE217,                X ] };
+    key <AD06> { [	UE218,       Udiaeresis ] };
+    key <AB01> { [	UE219,             UE21B ] }; //z
 
     // punctuation keys, need the dash and parens?
     key <AC10> { [ UE225, UE224 ] };
@@ -59,6 +59,3 @@ xkb_symbols "eml" {
     key <AD11> { [ UE239, braceleft, guillemotleft, leftdoublequotemark ] };
     key <AD12> { [ UE23A, braceright, guillemotright, rightdoublequotemark ] };
 };
-
-
-

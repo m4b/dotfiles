@@ -1548,9 +1548,10 @@ partial alphanumeric_keys
 partial alphanumeric_keys
 xkb_symbols "intl-unicode-logician" {
 
- name[Group1]= "The Logicians unicode-keyboard, for world domination";
+ name[Group1]= "English (US, international logicians unicode combining, for world domination)";
 
  include "us(intl-unicode)"
+ include "level3(switch)"
 
 // ⇒ U21D2 \Rightarrow
 // → U2192 \rightarrow
