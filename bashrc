@@ -7,13 +7,11 @@ alias l='ls -al --color=auto'
 alias grep="grep --color=auto"              # colourized grep
 alias egrep="egrep --color=auto"            # colourized egrep
 alias emacs='emacs --no-splash --fullscreen'
-alias budget='libreoffice /home/m4b/personal/budget2014.ods'
-
 
 EDITOR=emacs
 export EDITOR
 
-export PATH="$PATH:$HOME/bin/:$HOME/.cabal/bin:/opt/android-sdk/tools"
+export PATH="$PATH:$HOME/bin/:$HOME/.cargo/bin"
 
 # LESS man page colors -------------------------------------------------
 
@@ -62,8 +60,9 @@ PS2="\[\033[32m\]_\[\033[32m\]\[\033[34m\] ->\[\033[34m\]\[\033[00m\] "
 #PS2="> "
 
 myfortune=$(fortune)
-#echo $myfortune >> $HOME/misc/fortunes.txt
 echo $myfortune
 
-export PVS_LIBRARY_PATH="$HOME/bin/pvs/nasalib"
-#export CLASSPATH="$CLASSPATH:/home/m4b/lib/jar/*"
+. /usr/share/bash-completion/bash_completion
+
+# rust
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
